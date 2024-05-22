@@ -39,7 +39,7 @@ We take the last `count` of the last year and add a step size. The step size we 
 The scale in its turn is an average scale over past year steps. This results in the formula:
 
     scale = mean(train_step_scales)
-    test[118] = train[117] + train[117] * scale
+    test[118] = train[117]  + train[117] * scale + average_monthly_increase 
 
 We update accumulators accordingly.
 
