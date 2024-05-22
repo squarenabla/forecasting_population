@@ -31,7 +31,7 @@ We look at the previous N years and calculate differences between months x_{i} -
 Then we apply a gaussian filter to smooth differences and put them to the corresponding accumulator. 
 Accomplishing that we calculate "step" scales for every first month of the year:
 
-`step_scale = x_{i-1} - x_{i} - smoothed(x_{i-1 ... i-10}) / x{i-1}`, 
+`step_scale = (x_{i-1} - x_{i} - smoothed(x_{i-1 ... i-10})) / x{i-1}`, 
 where `i` corresponds to the first month of the current year and `i-1` to the last month of the year before. 
 
 #### Predicting the first month `as_of_date_id=118`: <br>
