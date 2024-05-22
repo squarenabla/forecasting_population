@@ -1,3 +1,4 @@
 *.csv
+*.zip
 .git
 .ipynb_checkpoints
